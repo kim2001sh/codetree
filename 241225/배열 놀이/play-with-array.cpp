@@ -27,7 +27,7 @@ int main() {
                 }
                 
             }
-            if (idx == 0) cout << 0 << endl;
+            if (idx == -1) cout << 0 << endl;
             else cout << idx + 1 << endl;
         }
         else {
