@@ -10,7 +10,7 @@ int main() {
     cin >> n >> a;
     int cnt = 0;
 
-    for (int i = 0; i < a.length(); i++) {
+    for (int i = 0; i < n; i++) {
         cin >> b;
         if (a == b) cnt++;
     }
