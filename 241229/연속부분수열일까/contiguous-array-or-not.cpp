@@ -11,7 +11,9 @@ int main() {
     bool flag = false;
 
     getline(cin, str1);
-    cin >> str2;
+    getline(cin, str2);
+
+
 
     if (str1.length() < str2.length()) {
         cout << "No";
