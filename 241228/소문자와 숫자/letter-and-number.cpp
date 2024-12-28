@@ -9,7 +9,7 @@ int main() {
     
 
     for (int i = 0; i < str.length(); i++) {
-        if (int(str[i]) >= 49 && int(str[i]) <= 57 || int(str[i]) >= int('a') && int(str[i]) <= int('z') || int(str[i]) >= int('A') && int(str[i]) <= int('Z')) {
+        if (int(str[i]) >= 48 && int(str[i]) <= 57 || int(str[i]) >= int('a') && int(str[i]) <= int('z') || int(str[i]) >= int('A') && int(str[i]) <= int('Z')) {
             
             cout << char(tolower(str[i]));
         }
