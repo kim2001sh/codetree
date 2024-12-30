@@ -30,8 +30,10 @@ int main() {
     for (int i = 0; i < k; i++) {
         cin >> n >> f >> trash >> b >> l;
         wkfys[i] = wkfy(n, f, b, l);
-        if (latename < wkfys[i].name) lateidx = i;
-        
+        if (latename < wkfys[i].name) {
+            latename = wkfys[i].name;
+            lateidx = i;
+        }
     }
 
     cout << "name " << wkfys[lateidx].name << endl << "addr " << wkfys[lateidx].front << trash << wkfys[lateidx].back << endl << "city " << wkfys[lateidx].local;
