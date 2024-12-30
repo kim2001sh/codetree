@@ -11,9 +11,10 @@ int main() {
     cin >> n >> k >> t;
     for (int i = 0; i < n; i++) {
         cin >> s[i];
-        if (s[i].length() >= t.length() && s[i].substr(0, 2) == t) s1[cnt++] = s[i];
+        if (s[i].length() >= t.length() && s[i].substr(0, t.length()) == t) s1[cnt++] = s[i];
     }
     sort(s1, s1 + cnt);
+    
 
     cout << s1[k - 1];
     
