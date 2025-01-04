@@ -1,42 +1,53 @@
 #include <iostream>
 #include <algorithm>
 
-class a{
-    public:
-        int x, qjs;
-        a(int x = 0, int qjs = 0) {
-            this->x = x;
-            this->qjs = qjs;
-        }
-};
-
-bool cmp(a x, a y) {
-    if (x.x == y.x) return x.qjs < y.qjs;
-    return x.x < y.x;
-}
+#define MAX_NUM 1000
 
 using namespace std;
 
+// 클래스 선언: 
+class Number{
+    public:
+        int number;
+        int index;
+        Number(int number, int index) {
+            this->number = number;
+            this->index = index;
+        }
+		Number(){}
+};
+
+// Custom Comparator
+bool Cmp(Number a, Number b) {
+    if(a.number != b.number)
+        return a.number < b.number;
+    return a.index < b.index;
+}
+
+Number numbers[MAX_NUM];
+
 int main() {
-    // Please write your code here.
-    int n, k;
+    // 변수 선언:
+    int n, num_cache;
+    int answer[MAX_NUM];
+
+    // 입력:
     cin >> n;
-    a arr[1000];
-    for (int i = 0; i < n; i++) {
-        cin >> k;
-        arr[i] = a(k, i);
+    for(int i = 0; i < n; i++) {
+        cin >> num_cache;
+        numbers[i] = Number(num_cache, i);
     }
 
-    sort(arr, arr + n, cmp);
-    
+    // Custom Comparator를 활용한 정렬:
+    sort(numbers, numbers + n, Cmp);
 
-    for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n; j++) {
-            if (arr[j].qjs == i) {
-                cout << j + 1 << " ";
-                break;
-            }
-        }
+    // 정렬된 숫자들의 원래 인덱스를 활용한 정답 배열 저장:
+    for(int i = 0; i < n; i++) 
+        answer[numbers[i].index] = i + 1; // 인덱스 보정
+
+    // 출력:
+    for(int i = 0; i < n; i++){
+        cout << answer[i] << " ";
     }
 
     return 0;
