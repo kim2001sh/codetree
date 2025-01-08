@@ -37,7 +37,7 @@ int main() {
     }
 
 
-    if (x1 == 1001) cout << 0;
+    if (x1 == 2001) cout << 0;
     else cout << (x2 + 1 - x1) * (y2 + 1 - y1);
     return 0;
 }
