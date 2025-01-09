@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int n, m, arra[1001], arrb[1001], t, a = 0, b = 0, total_t = 0;
+    int n, m, arra[1000000], arrb[1000000], t, a = 0, b = 0, total_t = 0;
     char d;
 
     cin >> n >> m;
