@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     // Please write your code here.
-    int n, m, k, arr[101], x;
+    int n, m, k, arr[101] = {}, x;
     bool flag = false;
 
     cin >> n >> m >> k;
