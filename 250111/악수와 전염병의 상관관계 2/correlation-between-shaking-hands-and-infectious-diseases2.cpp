@@ -36,14 +36,14 @@ int main() {
 
     sort(arr, arr + T, cmp);
 
-    for (int i = 0; i < T; i++) {
+    for (int i = 0; i < N; i++) {
         if (i == P - 1) arr[i].wjs = 1;
         else arr[i].wjs = 0;
         arr[i].wjs_cnt = 0;
 
     }
 
-    for (int i = 0; i < T; i++) {
+    for (int i = 0; i < N; i++) {
         if (arr[arr[i].wjs_from - 1].wjs == 0 && arr[arr[i].wjs_to - 1].wjs == 0) ;
         else if (arr[arr[i].wjs_from - 1].wjs == 1 && arr[arr[i].wjs_to - 1].wjs == 1) {
             arr[arr[i].wjs_from - 1].wjs_cnt += 1;
