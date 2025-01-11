@@ -17,8 +17,7 @@ class c{
             this->wjs_from = wjs_from;
 
             this->wjs_to = wjs_to;
-            this->wjs_cnt = 0;
-            this->wjs = 0;
+            
         }
 };
 
@@ -30,7 +29,7 @@ int main() {
     // Please write your code here.
     int N, K, P, T, t, x, y;
     cin >> N >> K >> P >> T;
-    c arr[100];
+    c arr[250];
     for (int i = 0; i < T; i++) {
         cin >> t >> x >> y;
         arr[i] = c(t, x, y);
