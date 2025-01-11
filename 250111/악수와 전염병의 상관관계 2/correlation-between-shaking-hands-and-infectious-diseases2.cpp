@@ -17,6 +17,8 @@ class c{
             this->wjs_from = wjs_from;
 
             this->wjs_to = wjs_to;
+            this->wjs_cnt = 0;
+            this->wjs = 0;
         }
 };
 
