@@ -43,7 +43,7 @@ int main() {
 
     }
 
-    for (int i = 0; i < N; i++) {
+    for (int i = 0; i < T; i++) {
         if (arr[arr[i].wjs_from - 1].wjs == 0 && arr[arr[i].wjs_to - 1].wjs == 0) ;
         else if (arr[arr[i].wjs_from - 1].wjs == 1 && arr[arr[i].wjs_to - 1].wjs == 1) {
             arr[arr[i].wjs_from - 1].wjs_cnt += 1;
