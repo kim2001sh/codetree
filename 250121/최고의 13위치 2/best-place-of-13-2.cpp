@@ -20,10 +20,19 @@ int main() {
 
                     x = arr[i][j] + arr[i][j + 1] + arr[i][j + 2] + arr[k][l] + arr[k][l + 1] + arr[k][l + 2];
                     if (i == k) {
-                        if (j == l - 1) x -= arr[i][j];
-                        else if (j == l - 2) x -= arr[i][j];
-                        else if (l == j - 1) x -= arr[i][l];
-                        else if (l == j - 2) x -= arr[i][l];
+                        if (j == l - 1) {
+                            x -= arr[i][l];
+                            x -= arr[i][l + 1];
+                        }
+                        else if (j == l - 2) x -= arr[i][l];
+                            
+                            
+                        else if (l == j - 1) {
+                            x -= arr[i][j];
+                            x -= arr[i][j + 1];
+                        }
+
+                        else if (l == j - 2) x -= arr[i][j];
                     }
                     if (x > max_value) max_value = x;
 
