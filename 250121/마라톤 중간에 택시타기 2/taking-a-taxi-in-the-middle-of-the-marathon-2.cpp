@@ -21,7 +21,7 @@ int main() {
                 dis += arr[j][0] - arr[j - 2][0] >= 0 ? arr[j][0] - arr[j - 2][0] : -1 * (arr[j][0] - arr[j - 2][0]);
                 dis += arr[j][1] - arr[j - 2][1] >= 0 ? arr[j][1] - arr[j - 2][1] : -1 * (arr[j][1] - arr[j - 2][1]);
             }
-            else if (i - 1 == j) ;
+            else if (i - 1 == j) continue;
             else {
                 dis += arr[j][0] - arr[j - 1][0] >= 0 ? arr[j][0] - arr[j - 1][0] : -1 * (arr[j][0] - arr[j - 1][0]);
                 dis += arr[j][1] - arr[j - 1][1] >= 0 ? arr[j][1] - arr[j - 1][1] : -1 * (arr[j][1] - arr[j - 1][1]);
