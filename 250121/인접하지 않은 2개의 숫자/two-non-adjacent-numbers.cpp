@@ -9,7 +9,7 @@ int main() {
     for (int i = 0; i < n; i++) cin >> arr[i];
 
     for (int i = 0; i < n - 2; i++) {
-        for (j = i + 2; j < n; j++) {
+        for (int j = i + 2; j < n; j++) {
             if (arr[i] + arr[j] > max_sum) max_sum = arr[i] + arr[j];
         }
     }
