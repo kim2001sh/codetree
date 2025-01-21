@@ -25,6 +25,8 @@ int main() {
             value += s[j] - '0';
         }
         if (value > max_value) max_value = value;
+        if (s[i] == '1') s[i] = '0';
+        else s[i] = '1';
         
     }
 
