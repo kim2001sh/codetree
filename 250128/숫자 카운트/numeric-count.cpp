@@ -12,6 +12,7 @@ int main() {
     for (int i = 100; i <= 999; i++) {
         string s = to_string(i);
         if (s[0] == '0' || s[1] == '0' || s[2] == '0') continue;
+        if (s[0] == s[1] || s[0] == s[2] || s[1] == s[2]) continue;
         arr[cnt++] = s;
     }
 
