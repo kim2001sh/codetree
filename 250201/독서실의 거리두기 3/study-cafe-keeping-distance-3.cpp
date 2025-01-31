@@ -28,7 +28,7 @@ int main() {
         }
         else cnt++;
     }
-   
+
     arr[(idx_start + idx_end) / 2] = 1;
     cnt = 0;
 
@@ -39,8 +39,9 @@ int main() {
             if (cnt < min_val) {
                 min_val = cnt;
                 
-                cnt = 1;
+                
             }
+            cnt = 1;
         }
         else cnt++;
     }
