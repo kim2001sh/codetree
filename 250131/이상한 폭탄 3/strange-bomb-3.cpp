@@ -23,6 +23,6 @@ int main() {
         }
     }
 
-    cout << *max_element(bomb, bomb + 1000001);
+    cout << max_element(bomb, bomb + 1000001) - bomb;
     return 0;
 }
