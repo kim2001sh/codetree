@@ -13,6 +13,7 @@ int main() {
         if (arr2[i] == 'A') scorea += arr[i];
         else if (arr2[i] == 'B') scoreb += arr[i];
         else scorec += arr[i];
+    
 
         if (scorea > scoreb && scorea > scorec && a == 1 && b == 0 && c == 0) ;
         else if (scorea < scoreb && scorec < scoreb && a == 0 && b == 1 && c == 0) ;
@@ -23,7 +24,7 @@ int main() {
         else if (scorec < scorea && scoreb == scorea && a == 1 && b == 1 && c == 0) ;
         else {
             cnt++;
-            if (scorea == scoreb == scorec) {
+            if (scorea == scoreb && scoreb == scorec) {
                 a = 1;
                 b = 1;
                 c = 1;
