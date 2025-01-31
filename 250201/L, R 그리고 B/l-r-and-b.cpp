@@ -33,7 +33,7 @@ int main() {
     else {
         if (l[0] == b[0]) {
             if (r[0] == b[0] && max(l[1], b[1]) < r[1] && min(l[1], b[1]) > r[1]) {
-                cout << abs(l[1] - b[1]) + 1;
+                cout << abs(l[1] - b[1]) + 2;
             }
             else cout << abs(l[1] - b[1]) - 1;
             return 0;
@@ -41,7 +41,7 @@ int main() {
         }
         else if (l[1] == b[1]) {
             if (r[1] == b[1] && max(l[0], b[0]) < r[0] && min(l[0], b[0]) > r[0]) {
-                cout << abs(l[0] - b[0]) + 1;
+                cout << abs(l[0] - b[0]) + 2;
             }
             else cout << abs(l[0] - b[0]) - 1;
             return 0;
