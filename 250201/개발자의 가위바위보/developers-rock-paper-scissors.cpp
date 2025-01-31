@@ -14,8 +14,8 @@ int main() {
     cnt1 = 0;
     cnt2 = 0;
     for (int i = 0; i < n; i++) {
-        if ((arr[i][0] + arr[i][1]) % 3 == 1) cnt1++;
-        else if ((arr[i][0] + arr[i][1]) % 3 == 2) cnt2++;
+        if ((arr[i][0] - arr[i][1] + 3) % 3 == 1) cnt1++;
+        else if ((arr[i][0] - arr[i][1] + 3) % 3 == 2) cnt2++;
     }
 
     max_val = max(cnt1, cnt2);
