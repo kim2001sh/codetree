@@ -8,6 +8,6 @@ int main() {
     
     cin >> x;
 
-    cout << 2 * sqrt(x - 1);
+    cout << int(2 * sqrt(x - 1));
     return 0;
 }
